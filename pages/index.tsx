@@ -10,8 +10,8 @@ export default function Home() {
           <h1 className=" text-5xl font-bold">We care about your pet</h1>
 
           <p className="my-10 text-xl">
-            That is why pettitude will help you to improve your little friend's
-            life quality
+            That is why pettitude will help you to improve your little friend
+            {"'"}s life quality
           </p>
         </div>
 

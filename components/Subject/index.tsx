@@ -27,6 +27,7 @@ export default function Subject(props: SubjectProps) {
   return (
     <div className="group relative h-[250px] w-[33.33%] cursor-pointer">
       <Image
+        alt={props.type}
         className="group-hover:scale-110 transition-transform duration-300"
         objectFit="cover"
         layout="fill"

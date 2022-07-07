@@ -26,7 +26,13 @@ export default function Header() {
             "outline outline-blue-300": lang == "pt",
           })}
         >
-          <Image src={LangBR} objectFit={"cover"} height={32} layout="fixed" />
+          <Image
+            alt="pt-BR"
+            src={LangBR}
+            objectFit={"cover"}
+            height={32}
+            layout="fixed"
+          />
         </div>
         <div
           onClick={() => setLang("en")}
@@ -35,7 +41,13 @@ export default function Header() {
             "outline outline-blue-300": lang == "en",
           })}
         >
-          <Image src={LangEN} objectFit={"cover"} height={32} layout="fixed" />
+          <Image
+            alt="en-US"
+            src={LangEN}
+            objectFit={"cover"}
+            height={32}
+            layout="fixed"
+          />
         </div>
       </div>
     </header>
