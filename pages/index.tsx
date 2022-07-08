@@ -1,6 +1,19 @@
+import axios from "axios";
 import { Header, Subject } from "components";
+import { useEffect } from "react";
 
 export default function Home() {
+  useEffect(() => {
+    axios.get("/api/users").then(
+      (res) => {
+        console.log(res.data);
+      },
+      (err) => {
+        console.log(err);
+      }
+    );
+  }, []);
+
   return (
     <>
       <Header />
