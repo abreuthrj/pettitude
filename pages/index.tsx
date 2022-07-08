@@ -1,6 +1,19 @@
+import axios from "axios";
 import { Header, Subject } from "components";
+import { useEffect } from "react";
 
 export default function Home() {
+  useEffect(() => {
+    axios.get("/api/users").then(
+      (res) => {
+        console.log(res.data);
+      },
+      (err) => {
+        console.log(err);
+      }
+    );
+  }, []);
+
   return (
     <>
       <Header />
@@ -10,8 +23,8 @@ export default function Home() {
           <h1 className=" text-5xl font-bold">We care about your pet</h1>
 
           <p className="my-10 text-xl">
-            That is why pettitude will help you to improve your little friend's
-            life quality
+            That is why pettitude will help you to improve your little friend
+            {"'"}s life quality
           </p>
         </div>
 
